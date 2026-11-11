@@ -1,0 +1,10 @@
+name: Dira check
+on:
+  push:
+    branches: ["feature/TP-14-*"]
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Dira GitHub integration check"
